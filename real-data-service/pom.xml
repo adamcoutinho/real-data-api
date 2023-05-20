@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.main</groupId>
+        <artifactId>real-data-api</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.main.alvilar.ide.core</groupId>
+    <artifactId>real-data-service</artifactId>
+    <packaging>pom</packaging>
+
+    <name>real-data-service</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <modules>
+        <module>real-data-service-orchestrator</module>
+        <module>real-data-service-authpass</module>
+        <module>real-data-service-producer-stream</module>
+        <module>real-data-service-event-stream</module>
+        <module>real-data-service-card</module>
+        <module>real-data-service-account</module>
+        <module>real-data-service-customer</module>
+    </modules>
+</project>

@@ -1,0 +1,27 @@
+#define name application
+spring:
+  application:
+    name: backend-sevice-event-stream
+#    kafka consumer
+  kafka:
+    bootstrap.servers: localhost:9092
+    polling.timeout: 10000
+    consumer:
+      order:
+        name: queue.card
+        enabled: true
+        '[key.deserializer]': org.apache.kafka.common.serialization.StringDeserializer
+        '[value.deserializer]': tech.ippon.generated.service.kafka.deserializer.OrderDeserializer
+        '[group.id]': generated-project-for-tests
+        '[auto.offset.reset]': earliest
+
+#change port
+server:
+  port: 8084
+
+#configure client eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka
+

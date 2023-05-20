@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  microsevice-gateway:
+    build: ./real-data-gateway/Dockerfile
+    restart: always
+  microservice-registry:
+    build: ./real-data-registry/Dockerfile
+    restart: always

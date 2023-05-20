@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: backend-service-customer
+
+server:
+  port: 8084
+  servlet:
+    context-path: /customer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka
